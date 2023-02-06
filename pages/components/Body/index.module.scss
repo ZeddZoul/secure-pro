@@ -1,0 +1,235 @@
+@import "../../../styles/variables.scss";
+.Fold1 {
+  padding-inline: 10%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  p {
+    color: grey;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 20px;
+  }
+  a {
+    padding: 8px 16px;
+    display: flex;
+    width: max-content;
+    background-color: $green;
+    color: white;
+    justify-content: center;
+    border-radius: 4px;
+    margin-block: 20px;
+  }
+  img {
+    height: 10%;
+    width: 45%;
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 3%;
+    img {
+      width: 60%;
+      height: 15%;
+      min-height: 400px;
+      min-width: 300px;
+    }
+    a {
+      margin: 20px auto;
+    }
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+}
+.Fold2 {
+  padding: 10%;
+  text-align: center;
+  h2 {
+    font-size: 32px;
+    color: $black;
+    padding-block: 25px;
+  }
+  p {
+    color: grey;
+  }
+  .prices {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-block: 30px;
+    justify-content: center;
+    .card {
+      width: 23%;
+      min-width: 220px;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+      background-color: $bg-grey;
+      outline: 2px solid rgb(209, 205, 205);
+      margin-top: 50px;
+      span {
+        display: block;
+        padding-block: 20px;
+        h3 {
+          color: $green;
+          font-size: 28px;
+          font-weight: 400;
+        }
+      }
+      &::before {
+        content: attr(data-title);
+        font-size: 16px;
+        font-weight: 600;
+        position: absolute;
+        top: -4%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color: $green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 5px solid white;
+        color: white;
+        transition: color 0.25s linear, border 0.25s linear,
+          padding 0.25s linear, background-color 0.25s linear;
+      }
+
+      &:hover::before {
+        color: $green;
+        border: 1px solid $green;
+        background-color: white;
+        padding: 3px;
+      }
+    }
+  }
+  .start {
+    margin-block: 20px;
+    a {
+      padding: 8px 16px;
+      background-color: $green;
+      color: white;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+  .details {
+    display: flex;
+    gap: 15%;
+    color: grey;
+    flex-wrap: wrap;
+   align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    span{
+       width: 200px;
+
+    }
+    svg {
+      font-size: 30px;
+      margin: 15px;
+    }
+  }
+}
+.Fold3 {
+  background-color: $bg-dark-grey;
+  padding: 10%;
+  h2{
+    margin-bottom: 40px;
+    color: $black;
+    font-size: 32px;
+    text-align: center;
+  }
+  .pkgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    .card {
+      width: 45%;
+      background-color: white;
+      border-radius: 4px;
+      padding: 5% 3%;
+      min-width:320px;
+      > p{
+        font-size: 20px;
+        margin-block: 10px;
+        color: gray;
+        
+      }
+      
+      h3 {
+        color: $black;
+        font-weight: 500;
+        margin-block: 20px;
+        mark {
+          background-color: $bg-dark-grey;
+          color: $black;
+          padding: 3px;
+          border-radius: 5px;
+        }
+      }
+      ul{
+        margin-block: 10px;
+        li{
+          padding-block: 5px ;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          color: gray;
+          svg{
+            color: rgb(42, 163, 42);
+            font-weight: 200;
+            font-size: 25px;
+          }
+        }
+      }
+      a {
+        display: block;
+        background-color: $green;
+        color: white;
+        font-weight: 600;
+        padding: 8px 16px;
+        text-align: center;
+        border-radius: 4px;
+        margin-block: 20px;
+      }
+    }
+  }
+}
+.Fold4{
+  display: flex;
+  padding: 5%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  div{
+    padding: 5px;
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    h2{
+      font-size: 32px;
+    }
+  }
+  @media (max-width:1000px) {
+    hr{
+      display: none;
+    }
+    
+  }
+}

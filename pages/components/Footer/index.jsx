@@ -55,12 +55,12 @@ const Footer = () => {
         <br />
         Forex and CFDs are leveraged products and can result in losses that
         exceed your deposits. Please ensure you fully understand all of the
-        risks. Contracts for Difference ("CFDs") are leveraged products and
-        carry a significant risk of loss to your capital, as prices may move
-        rapidly against you and you may be required to make further payments to
-        keep any trades open. These products are not suitable for all clients,
-        therefore please ensure you fully understand the risks and seek
-        independent advice.
+        risks. Contracts for Difference (&quot;CFDs&quot;) are leveraged
+        products and carry a significant risk of loss to your capital, as prices
+        may move rapidly against you and you may be required to make further
+        payments to keep any trades open. These products are not suitable for
+        all clients, therefore please ensure you fully understand the risks and
+        seek independent advice.
         <br /> <br />
         Apple and the Apple logo are trademarks of Apple Inc, registered in the
         US and other countries and regions. App Store is a service mark of Apple

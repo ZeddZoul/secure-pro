@@ -1,17 +1,35 @@
 @import "../../../styles/variables.scss";
 .Header {
   display: flex;
+  background-color: #00000036;
   align-items: center;
   justify-content: space-between;
   padding:20px 10%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  left: 0;
   .menubar {
     display: none;
+      @media (max-width: 950px) {
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  &:hover{
+    color: $green;
+  }
+      }
   }
   img {
     height: 50px;
     width: 170px;
   }
   .Nav {
+      @media (max-width: 950px) {
+        display: none;
+      }
     display: flex;
     justify-content: flex-end;
     gap: 15px;

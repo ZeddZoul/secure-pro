@@ -2,6 +2,8 @@ import Link from "next/link";
 import Nav from "../Nav";
 import s from "./index.module.scss"
 const Hero = () => {
+
+  
   return (
     <div className={s.Hero}>
       <Nav />

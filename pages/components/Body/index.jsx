@@ -53,9 +53,9 @@ const Body = () => {
         reflist.forEach((el) => {
           observer.observe(el);
         });
-  }
-  , []
-)
+      }
+      , [reflist]
+      )
 
 
   return (
@@ -290,8 +290,8 @@ const Body = () => {
         <h2>SWITCH TO SECURE PRO MARKET</h2>
         <p>
           At secure Pro Market we work hard to enhance your trading experience.
-          As a global, 5 star rated broker, our client’s satisfaction is in the
-          center of our focus.
+          As a global, 5 star rated broker, our client&quot;s satisfaction is in
+          the center of our focus.
         </p>
         <div>
           <div className={s.card}>
@@ -307,7 +307,7 @@ const Body = () => {
             <FontAwesomeIcon icon={faShield} />
             <h3>SAFE & SECURE</h3>
             <p>
-              Secure Pro Market is regulated by the world's biggest supervision
+              Secure Pro Market is regulated by the world&quot;s biggest supervision
               authorities, including the Financial Conduct Authority
             </p>
           </div>

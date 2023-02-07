@@ -46,7 +46,8 @@ const Body = () => {
           entries.forEach((entry) => {
             entry.isIntersecting
               ? entry.target.classList.add(`${s.animate}`)
-              : entry.target.classList.remove(`${s.animate}`);
+              // : entry.target.classList.remove(`${s.animate}`); causing glitch
+              :null
           });
         });
         //tell observer to observe each el on the reflist
@@ -151,7 +152,7 @@ const Body = () => {
       <section className={s.Fold3}>
         <h2>COMPLETE PACKAGES FOR EVERY TRADER</h2>
         <div className={s.pkgs}>
-          <div className={s.card}>
+          <di ref={take} v className={s.card}>
             <h3>
               MINIMUM FUNDING <mark>$1000</mark>
             </h3>
@@ -178,8 +179,8 @@ const Body = () => {
             </ul>
 
             <Link href="/signup">Open An Account</Link>
-          </div>
-          <div className={s.card}>
+          </di>
+          <div ref={take} className={s.card}>
             {" "}
             <h3>
               MINIMUM FUNDING <mark>$5000</mark>
@@ -204,7 +205,7 @@ const Body = () => {
             </ul>
             <Link href="/signup">Open An Account</Link>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             {" "}
             <h3>
               MINIMUM FUNDING <mark>$10000</mark>
@@ -232,7 +233,7 @@ const Body = () => {
             </ul>
             <Link href="/signup">Open An Account</Link>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             {" "}
             <h3>
               MINIMUM FUNDING <mark>$50000</mark>
@@ -263,38 +264,38 @@ const Body = () => {
         </div>
       </section>
       <section className={s.Fold4}>
-        <div>
+        <div ref={take}>
           <h2>900,000+</h2>
           <p>Daily trades</p>
         </div>
         <hr />
-        <div>
+        <div ref={take}>
           {" "}
           <h2>750,000+</h2>
           <p>Clients</p>
         </div>
         <hr />
-        <div>
+        <div ref={take}>
           {" "}
           <h2>20 billion+</h2>
           <p>USD daily trade volume</p>
         </div>
         <hr />
-        <div>
+        <div ref={take}>
           {" "}
           <h2>95 billion+</h2>
           <p>USD assets under management</p>
         </div>
       </section>
       <section className={s.Fold5}>
-        <h2>SWITCH TO SECURE PRO MARKET</h2>
-        <p>
+        <h2 ref={take}>SWITCH TO SECURE PRO MARKET</h2>
+        <p ref={take}>
           At secure Pro Market we work hard to enhance your trading experience.
           As a global, 5 star rated broker, our client&quot;s satisfaction is in
           the center of our focus.
         </p>
         <div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <FontAwesomeIcon icon={faBriefcase} />
             <h3>2100+ INSTRUMENTS</h3>
             <p>
@@ -302,16 +303,16 @@ const Body = () => {
               Commodities, ETFs and more.
             </p>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             {" "}
             <FontAwesomeIcon icon={faShield} />
             <h3>SAFE & SECURE</h3>
             <p>
-              Secure Pro Market is regulated by the world&quot;s biggest supervision
-              authorities, including the Financial Conduct Authority
+              Secure Pro Market is regulated by the world&quot;s biggest
+              supervision authorities, including the Financial Conduct Authority
             </p>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <FontAwesomeIcon icon={faBookOpenReader} />
             <h3>COMPREHENSIVE EDUCATION</h3>
             <p>
@@ -319,7 +320,7 @@ const Body = () => {
               trading.
             </p>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <FontAwesomeIcon icon={faMoneyBill} />
             <h3>INNOVATIVE PLATFORM</h3>
             <p>
@@ -327,7 +328,7 @@ const Body = () => {
               best on the market.
             </p>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <FontAwesomeIcon icon={faUsersLine} />
             <h3>495,000+ CUSTOMERS</h3>
             <p>
@@ -335,7 +336,7 @@ const Body = () => {
               has gained thousands of customers.
             </p>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <FontAwesomeIcon icon={faComment} />
             <h3>FAST & HIGHLY QUALIFIED SUPPORT</h3>
             <p>
@@ -347,15 +348,19 @@ const Body = () => {
       </section>
 
       <section className={s.Fold6}>
-        <p>DEPOSIT WITH CRYPTO</p>
-        <h3>WE ACCEPT CRYPTO DEPOSITS</h3>
-        <p>DEPOSIT, WITHDRAW AND HOLD YOUR BALANCE IN BITCOIN, ETHEREUM</p>
+        <p ref={take}>DEPOSIT WITH CRYPTO</p>
+        <h3 ref={take}>WE ACCEPT CRYPTO DEPOSITS</h3>
+        <p ref={take}>
+          DEPOSIT, WITHDRAW AND HOLD YOUR BALANCE IN BITCOIN, ETHEREUM
+        </p>
 
-        <Link href="/signup">Get started</Link>
+        <Link ref={take} href="/signup">
+          Get started
+        </Link>
       </section>
 
       <section className={s.Fold7}>
-        <div>
+        <div ref={take}>
           <h2>Free Demo And Live MT4 Accounts</h2>
           <p>
             Instant market access and endless possibilities for trading,
@@ -364,33 +369,33 @@ const Body = () => {
           </p>
           <Link href="/signup">Open An Account</Link>
         </div>
-        <Image src={mt4} alt=" " />
+        <Image ref={take} src={mt4} alt=" " />
       </section>
 
       <section className={s.Fold8}>
         <h2>WE ARE TRUSTED</h2>
         <div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={l1} alt="" />
             <h2>8.9</h2>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={l2} alt="" />
             <h2>7.9</h2>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={l3} alt="" />
             <h2>9.0</h2>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={l4} alt="" />
             <h2>7.4</h2>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={l5} alt="" />
             <h2>8.0</h2>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={l6} alt="" />
             <h2>8.7</h2>
           </div>
@@ -398,7 +403,7 @@ const Body = () => {
       </section>
 
       <section className={s.Fold9}>
-        <div className={s.card}>
+        <div ref={take} className={s.card}>
           <div>
             <Image src={t1} alt="" />
             <span>
@@ -419,7 +424,7 @@ const Body = () => {
             with $500 but my story today is on a premium plan.
           </p>
         </div>
-        <div className={s.card}>
+        <div ref={take} className={s.card}>
           <div>
             <Image src={t2} alt="" />
             <span>
@@ -440,7 +445,7 @@ const Body = () => {
             does what it says. Thank you so much for this great opportunity!
           </p>
         </div>
-        <div className={s.card}>
+        <div ref={take} className={s.card}>
           <div>
             <Image src={t3} alt="" />
             <span>
@@ -482,21 +487,21 @@ const Body = () => {
           <h3>Multi-award winner</h3>
           <hr />
           <div>
-            <span>
+            <span ref={take}>
               <Image src={award} alt="" />
               <span>
                 <h4>Best CFD Broker</h4>
                 <p>TradeON Summit 2020</p>
               </span>
             </span>
-            <span>
+            <span ref={take}>
               <Image src={award} alt="" />
               <span>
                 <h4>Best CFD Broker</h4>
                 <p>TradeON Summit 2020</p>
               </span>
             </span>
-            <span>
+            <span ref={take}>
               <Image src={award} alt="" />
               <span>
                 <h4>Best CFD Broker</h4>
@@ -512,22 +517,22 @@ const Body = () => {
       <section className={s.Fold11}>
         <h2>FOUR STEPS TO START TRADING</h2>
         <div className={s.steps}>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={s1} alt="" />
             <h4>Registration</h4>
             <p>Open your live trading account after registration</p>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={s2} alt="" />
             <h4>Verify</h4>
             <p>Upload your documents to activate your account</p>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={s3} alt="" />
             <h4>Fund</h4>
             <p>Log in to your account and make a deposit</p>
           </div>
-          <div className={s.card}>
+          <div ref={take} className={s.card}>
             <Image src={s4} alt="" />
             <h4>Trade</h4>
             <p>Start trading using over 250 different trading tools</p>

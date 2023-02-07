@@ -523,13 +523,13 @@ a{
 .animate{
   // transition: all .5s linear;
   // background-color: red ;
-  animation: fade 1s ;
+  animation: fade .91s linear backwards ;
 }
 @keyframes fade {
   from{
     opacity: 0;
     scale: .5;
-    transform: translate(-10px,-10px);
+    transform: translate(-50px,-10px);
   }
   to{
     opacity:1;

@@ -13,10 +13,10 @@ const Nav = () => {
           <Link href="/">Market</Link>
           <Link href="/">Trading</Link>
           <Link href="/">Account Types</Link>
-          <Link className={`${s.btn} ${s.login}`} href="/">
+          <Link className={`${s.btn} ${s.login}`} href="/login">
             Log in
           </Link>
-          <Link className={`${s.btn} ${s.signup}`} href="/">
+          <Link className={`${s.btn} ${s.signup}`} href="/signup">
             Sign up
           </Link>
         </nav>

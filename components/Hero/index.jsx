@@ -13,7 +13,7 @@ const Hero = () => {
           Access 40,000+ instruments – across asset classes – to trade, hedge
           and invest from a single account.
         </p>
-        <Link href="/signup" >Open An Account</Link>
+        <Link href="/auth/signup" >Open An Account</Link>
       </div>
     </div>
   );

@@ -1,22 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import s from "./index.module.scss";
-import award from "../../public/award.svg";
-import fold1 from "../../public/sed.webp";
-import mt4 from "../../public/latest.jpg";
-import l1 from "../../public/1.png";
-import s1 from "../../public/1_2.svg";
-import l2 from "../../public/2.png";
-import s2 from "../../public/2_2.svg";
-import l3 from "../../public/3.png";
-import s3 from "../../public/3_2.svg";
-import l4 from "../../public/4.png";
-import s4 from "../../public/4_2.svg"
-import l5 from "../../public/5.png";
-import l6 from "../../public/6.png";
-import t1 from "../../public/team1.jpg";
-import t2 from "../../public/team2.jpg";
-import t3 from "../../public/team3.jpg";
+import award from "@/public/award.svg";
+import fold1 from "@/public/sed.webp";
+import mt4 from "@/public/latest.jpg";
+import l1 from "@/public/1.png";
+import s1 from "@/public/1_2.svg";
+import l2 from "@/public/2.png";
+import s2 from "@/public/2_2.svg";
+import l3 from "@/public/3.png";
+import s3 from "@/public/3_2.svg";
+import l4 from "@/public/4.png";
+import s4 from "@/public/4_2.svg"
+import l5 from "@/public/5.png";
+import l6 from "@/public/6.png";
+import t1 from "@/public/team1.jpg";
+import t2 from "@/public/team2.jpg";
+import t3 from "@/public/team3.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import { faHeadphones } from "@fortawesome/free-solid-svg-icons";
@@ -132,7 +132,7 @@ const Body = () => {
         </div>
         <div ref={take} className={s.start}>
           <p>With the little you have tried, join now!</p>
-          <Link href="/signup">Start Trading</Link>
+          <Link href="/auth/signup">Start Trading</Link>
         </div>
         <div ref={take} className={s.details}>
           <span>
@@ -178,7 +178,7 @@ const Body = () => {
               </li>
             </ul>
 
-            <Link href="/signup">Open An Account</Link>
+            <Link href="/auth/signup">Open An Account</Link>
           </di>
           <div ref={take} className={s.card}>
             {" "}
@@ -203,7 +203,7 @@ const Body = () => {
                 <FontAwesomeIcon icon={faCheckCircle} /> Financial Plan
               </li>
             </ul>
-            <Link href="/signup">Open An Account</Link>
+            <Link href="/auth/signup">Open An Account</Link>
           </div>
           <div ref={take} className={s.card}>
             {" "}
@@ -231,7 +231,7 @@ const Body = () => {
                 <FontAwesomeIcon icon={faCheckCircle} /> Financial Plan
               </li>
             </ul>
-            <Link href="/signup">Open An Account</Link>
+            <Link href="/auth/signup">Open An Account</Link>
           </div>
           <div ref={take} className={s.card}>
             {" "}
@@ -259,7 +259,7 @@ const Body = () => {
                 <FontAwesomeIcon icon={faCheckCircle} /> Financial Plan
               </li>
             </ul>
-            <Link href="/signup">Open An Account</Link>
+            <Link href="/auth/signup">Open An Account</Link>
           </div>
         </div>
       </section>
@@ -354,7 +354,7 @@ const Body = () => {
           DEPOSIT, WITHDRAW AND HOLD YOUR BALANCE IN BITCOIN, ETHEREUM
         </p>
 
-        <Link ref={take} href="/signup">
+        <Link ref={take} href="/auth/signup">
           Get started
         </Link>
       </section>
@@ -367,7 +367,7 @@ const Body = () => {
             analysis and automation. Metaquotes 5 is an evolution of MT4 with
             additional features that supercharge your trading.
           </p>
-          <Link href="/signup">Open An Account</Link>
+          <Link href="/auth/signup">Open An Account</Link>
         </div>
         <Image ref={take} src={mt4} alt=" " />
       </section>
@@ -542,7 +542,7 @@ const Body = () => {
         <p>
           Connect with over 450,000 investors in the world’s leading FX Broker
         </p>
-        <Link href="/signup">Start Trade</Link>
+        <Link href="/auth/signup">Start Trade</Link>
       </section>
     </>
   );

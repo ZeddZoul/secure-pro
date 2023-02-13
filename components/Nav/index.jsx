@@ -20,10 +20,10 @@ const Nav = () => {
           <Link href="/">Market</Link>
           <Link href="/">Trading</Link>
           <Link href="/">Account Types</Link>
-          <Link className={`${s.btn} ${s.login}`} href="/login">
+          <Link className={`${s.btn} ${s.login}`} href="/auth/login">
             Log in
           </Link>
-          <Link className={`${s.btn} ${s.signup}`} href="/signup">
+          <Link className={`${s.btn} ${s.signup}`} href="/auth/signup">
             Sign up
           </Link>
         </nav>

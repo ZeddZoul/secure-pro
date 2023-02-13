@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import s from "./form.module.scss";
+import logo from "@/public/smalllogo.png";
 
 const Login = () => {
   const [formValues, setFormValues] = useState({ email: "", password: "" });
@@ -20,14 +21,16 @@ const Login = () => {
       </Head>
       <div className={s.BG}>
         <div className={s.FormWrapper}>
-          <Link href="/">
-            <Image src="" alt="" height={100} weight={100} />
-          </Link>
-          <h2>Welcome</h2>
-          <p>Please sign-in to your account</p>
+          <div>
+            {" "}
+            <Link href="/">
+              <Image src={logo} alt="" height={50} weight={50} />
+            </Link>
+            <h2>Welcome</h2>
+            <p>Please sign-in to your account</p>
+          </div>
           <form action="">
             <span>
-              {" "}
               <label htmlFor="email">Email/Username</label>
               <input
                 required

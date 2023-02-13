@@ -1,27 +1,28 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import s from "./form.module.scss";
 
 const Signup = () => {
-    const [formValues, setFormValues] = useState({
-      email: "",
-      username: "",
-      password: "",
-      confpassword: "",
+  const [formValues, setFormValues] = useState({
+    email: "",
+    username: "",
+    password: "",
+    confpassword: "",
+  });
+  const update = (e) => {
+    setFormValues({
+      ...formValues,
+      [e.target.name]: e.target.value,
     });
-    const update = (e) => {
-      setFormValues({
-        ...formValues,
-        [e.target.name]: e.target.value,
-      });
-   
-    };
+  };
 
   return (
     <div className={s.BG}>
       <div className={s.FormWrapper}>
-        {JSON.stringify(formValues)}
-        <h1>Logo</h1>
+        <Link href="/">
+          <Image src="" alt="" height={100} weight={100} />
+        </Link>
         <h2>Welcome</h2>
         <p>Please sign-in to your account</p>
         <form action="">
@@ -29,6 +30,7 @@ const Signup = () => {
             {" "}
             <label htmlFor="username">Username</label>
             <input
+              required
               type="text"
               name="username"
               id="username"
@@ -40,6 +42,7 @@ const Signup = () => {
             {" "}
             <label htmlFor="email">Email</label>
             <input
+              required
               type="email"
               name="email"
               id="email"
@@ -50,6 +53,7 @@ const Signup = () => {
           <span>
             <label htmlFor="password">Password</label>
             <input
+              required
               type="password"
               name="password"
               id="password"
@@ -60,6 +64,7 @@ const Signup = () => {
           <span>
             <label htmlFor="confpassword">Confirm password</label>
             <input
+              required
               type="password"
               name="confpassword"
               id="confpassword"

@@ -1,4 +1,4 @@
-@import "../../../styles/variables.scss";
+@import "../../styles/variables.scss";
 .Fold1 {
   padding-inline: 10%;
   margin-top: 20px;
@@ -291,7 +291,7 @@
       rgba(0, 0, 0, 0.641),
       rgba(0, 0, 0, 0.268)
     ),
-    url(../../../public/2.jpg);
+    url(../../public/2.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -440,7 +440,7 @@
       rgba(0, 0, 0, 0.641),
       rgba(0, 0, 0, 0.268)
     ),
-    url(../../../public/2.jpg);
+    url(../../public/2.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -523,12 +523,12 @@ a{
 .animate{
   // transition: all .5s linear;
   // background-color: red ;
-  animation: fade .6s linear backwards ;
+  animation: fade .6s linear forwards ;
 }
 @keyframes fade {
   from{
     opacity: 0;
-    scale: .5;
+    scale: .3;
     transform: translate(-50px,-10px);
   }
   to{

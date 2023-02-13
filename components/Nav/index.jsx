@@ -3,12 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../public/logo.png"
+import logo from "../../public/logo.png"
+import { useRef } from "react";
 const Nav = () => {
+  const nav = useRef()
+  let el = nav.current
+  console.log(el);
+  const menu = () => {
+    nav.current.classList.toggle(`${s.showMenu}`);
+  }
   return (
       <header className={s.Header}>
         <Image src={logo} alt="" placeholder="blur" />
-        <nav className={`${s.Nav}`}>
+        <nav ref={nav} className={`${s.Nav}`}>
           <Link href="/">Home</Link>
           <Link href="/">Market</Link>
           <Link href="/">Trading</Link>
@@ -20,7 +27,7 @@ const Nav = () => {
             Sign up
           </Link>
         </nav>
-        <FontAwesomeIcon className={s.menubar} icon={faBars} />
+        <FontAwesomeIcon onClick={menu} className={s.menubar} icon={faBars} />
       </header>
   );
 };

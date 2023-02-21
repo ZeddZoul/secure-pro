@@ -15,4 +15,3 @@ const Deposit = () => {
   )
 }
 Deposit.getLayout = Layout
-export default index

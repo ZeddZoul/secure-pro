@@ -15,3 +15,4 @@ const Deposit = () => {
   )
 }
 Deposit.getLayout = Layout
+export default Deposit;

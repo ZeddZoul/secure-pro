@@ -13,22 +13,23 @@ const Nav = () => {
     nav.current.classList.toggle(`${s.showMenu}`);
   }
   return (
-      <header className={s.Header}>
-        <Image src={logo} alt="" placeholder="blur" />
-        <nav ref={nav} className={`${s.Nav}`}>
-          <Link href="/">Home</Link>
-          <Link href="/">Market</Link>
-          <Link href="/">Trading</Link>
-          <Link href="/">Account Types</Link>
-          <Link className={`${s.btn} ${s.login}`} href="/auth/login">
-            Log in
-          </Link>
-          <Link className={`${s.btn} ${s.signup}`} href="/auth/signup">
-            Sign up
-          </Link>
-        </nav>
-        <FontAwesomeIcon onClick={menu} className={s.menubar} icon={faBars} />
-      </header>
+    <header className={s.Header}>
+      {/* <Image src={#} alt="LOGO" placeholder="blur" /> */}
+      <p>Logo</p>
+      <nav ref={nav} className={`${s.Nav}`}>
+        <Link href="/">Home</Link>
+        <Link href="/">Market</Link>
+        <Link href="/">Trading</Link>
+        <Link href="/">Account Types</Link>
+        <Link className={`${s.btn} ${s.login}`} href="/auth/login">
+          Log in
+        </Link>
+        <Link className={`${s.btn} ${s.signup}`} href="/auth/signup">
+          Sign up
+        </Link>
+      </nav>
+      <FontAwesomeIcon onClick={menu} className={s.menubar} icon={faBars} />
+    </header>
   );
 };
 

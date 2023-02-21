@@ -14,7 +14,8 @@ const Sidebar = () => {
   return (
     <ul className={s.Sidebar}>
       <Link href="/dashboard">
-        <Image src={logo} height={35} weight={35} alt="" />
+        {/* <Image src={logo} height={35} weight={35} alt="" /> */}
+        <p>Logo</p>
       </Link>
       <Link href="/dashboard">
         <FontAwesomeIcon icon={faHome} />

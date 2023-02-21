@@ -1,5 +1,3 @@
-import Image from "next/image";
-import logo from "@/public/smalllogo.png";
 import s from "./index.module.scss";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -2,8 +2,6 @@ import s from "./index.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../../public/logo.png"
 import { useRef } from "react";
 const Nav = () => {
   const nav = useRef()

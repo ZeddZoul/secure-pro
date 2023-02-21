@@ -4,7 +4,7 @@ import s from "./index.module.scss";
 
 const Dashboard = () => {
   return (
-    <Layout>
+
       <main className={s.overview}>
         <div className={`${s.card} ${s.welcome}`}>
           <p>Welcome 🎉 Wisdom</p>
@@ -71,8 +71,8 @@ const Dashboard = () => {
           <Link href="#">Invite</Link>
         </div>
       </main>
-    </Layout>
+
   );
 };
-
+Dashboard.getLayout = Layout
 export default Dashboard;

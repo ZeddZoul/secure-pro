@@ -152,7 +152,7 @@ const Body = () => {
       <section className={s.Fold3}>
         <h2>COMPLETE PACKAGES FOR EVERY TRADER</h2>
         <div className={s.pkgs}>
-          <di ref={take} v className={s.card}>
+          <div ref={take}  className={s.card}>
             <h3>
               MINIMUM FUNDING <mark>$1000</mark>
             </h3>
@@ -179,7 +179,7 @@ const Body = () => {
             </ul>
 
             <Link href="/auth/signup">Open An Account</Link>
-          </di>
+          </div>
           <div ref={take} className={s.card}>
             {" "}
             <h3>

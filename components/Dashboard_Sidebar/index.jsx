@@ -1,5 +1,6 @@
 import s from "./index.module.scss";
 import Link from "next/link";
+import logo from "@/public/ff.ico";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDoorOpen } from "@fortawesome/free-solid-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -7,13 +8,13 @@ import { faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 import { faMoneyBillTransfer } from "@fortawesome/free-solid-svg-icons";
 import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { faCashRegister } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 const Sidebar = () => {
-  
+   
   return (
     <ul className={s.Sidebar}>
       <Link href="/dashboard">
-        {/* <Image src={logo} height={35} weight={35} alt="" /> */}
-        <p>Logo</p>
+        <Image src={logo} height={35} weight={35} alt="" />
       </Link>
       <Link href="/dashboard">
         <FontAwesomeIcon icon={faHome} />

@@ -2,18 +2,19 @@ import s from "./index.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import logo from "@/public/logo.png";
 import { useRef } from "react";
+import Image from "next/image";
 const Nav = () => {
   const nav = useRef()
   let el = nav.current
   console.log(el);
   const menu = () => {
-    nav.current.classList.toggle(`${s.showMenu}`);
+    el.classList.toggle(`${s.showMenu}`);
   }
   return (
     <header className={s.Header}>
-      {/* <Image src={#} alt="LOGO" placeholder="blur" /> */}
-      <p>Logo</p>
+      <Image src={logo} alt="LOGO" placeholder="blur" />
       <nav ref={nav} className={`${s.Nav}`}>
         <Link href="/">Home</Link>
         <Link href="/">Market</Link>
